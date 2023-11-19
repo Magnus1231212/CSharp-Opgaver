@@ -50,7 +50,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="tasks\" />
+    <Folder Include="tasks\Arithmetic-expressions\" />
+    <Folder Include="tasks\Arrays\" />
+    <Folder Include="tasks\Boolean-variables\" />
+    <Folder Include="tasks\Constructors\" />
+    <Folder Include="tasks\Extended-control-structures\" />
+    <Folder Include="tasks\If-else-statements\" />
+    <Folder Include="tasks\Inheritance\" />
+    <Folder Include="tasks\Instance-variables\" />
+    <Folder Include="tasks\Loops\" />
+    <Folder Include="tasks\Methods-and-instances\" />
+    <Folder Include="tasks\Public-Private-and-Protected\" />
+    <Folder Include="tasks\Return-types-and-parameters\" />
+    <Folder Include="tasks\Strings\" />
+    <Folder Include="tasks\Switch-Case\" />
+    <Folder Include="tasks\Variables-in-expressions\" />
+    <Folder Include="tasks\Variables\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
