@@ -10,6 +10,31 @@ namespace CSharp_Opgaver
     {
         static void Main(string[] args)
         {
+            do
+            {
+                Menu(0);
+
+            }while (true);
+        }
+
+        static void Menu(int type)
+        {
+            switch(type)
+            {
+                case 0:
+                    {
+                        Console.WriteLine("1. Opgave 1");
+                        return;
+                    }
+                case 1:
+                    {
+                        return;
+                    }
+                default:
+                    {
+                        return;
+                    }
+            }
         }
     }
 }
