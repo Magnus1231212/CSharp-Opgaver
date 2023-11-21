@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Opgaver.tasks.Variables
+namespace CSharp_Opgaver.tasks.Strings
 {
-    internal class Variables_Tasks
+    internal class Strings_Tasks
     {
         public void Task1()
         {
             Console.WriteLine("Task 1");
             Console.ReadKey();
         }
-
         public void Task2()
         {
             Console.WriteLine("Task 2");
@@ -29,18 +28,6 @@ namespace CSharp_Opgaver.tasks.Variables
         public void Task4()
         {
             Console.WriteLine("Task 4");
-            Console.ReadKey();
-        }
-
-        public void Task5()
-        {
-            Console.WriteLine("Task 5");
-            Console.ReadKey();
-        }
-
-        public void Task6()
-        {
-            Console.WriteLine("Task 6");
             Console.ReadKey();
         }
     }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Opgaver.tasks.Variables
+namespace CSharp_Opgaver.tasks.If_else_statements
 {
-    internal class Variables_Tasks
+    internal class If_else_statements_Tasks
     {
         public void Task1()
         {
