@@ -29,7 +29,7 @@ namespace CSharp_Opgaver
                 }
             };
 
-            Menu.build(name, options, cases);
+            Menu.buildSub(name, options, cases);
         }
 
         public static void Strings()
@@ -48,30 +48,102 @@ namespace CSharp_Opgaver
                 () => Console.WriteLine("1"),
             };
 
-            Menu.build(name, options, cases);
+            Menu.buildSub(name, options, cases);
         }
 
-        public static void Menu3()
+        public static void Arithmetic_expressions()
         {
+            string name = "Arithmetic Expressions";
 
+            string[] options = {
+                "\t1. Task 1 \t Desc: Matematiske Udtryk og Programmering",
+            };
+
+            Action[] cases = {
+                () => {
+                    Console.WriteLine("1");
+                    Console.ReadKey();
+                }
+            };
+
+            Menu.buildSub(name, options, cases);
         }
         
-        public static void Menu4()
+        public static void Variable_expressions()
+        {
+            string name = "Variable Expressions";
+
+            string[] options = {
+                "\t1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "\t2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => {
+                    Console.WriteLine("1");
+                    Console.ReadKey();
+                }
+            };
+
+            Menu.buildSub(name, options, cases);
+        }
+
+        public static void Boolean_variables()
         {
 
         }
 
-        public static void Menu5()
+        public static void if_else_statements()
         {
 
         }
 
-        public static void Menu6()
+        public static void Switch_Case()
         {
 
         }
 
-        public static void Menu7()
+        public static void Loops()
+        {
+
+        }
+
+        public static void Advanced_control_structures()
+        {
+
+        }
+
+        public static void Methods_and_instances()
+        {
+
+        }
+
+        public static void Return_types_and_parameters()
+        {
+
+        }
+
+        public static void Instance_variables()
+        {
+
+        }
+
+        public static void Inheritance()
+        {
+
+        }
+
+        public static void Constructors()
+        {
+
+        }
+
+        public static void Arrays()
+        {
+
+        }
+
+        public static void Traversing_arrays()
         {
 
         }

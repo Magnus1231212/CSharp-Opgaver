@@ -13,109 +13,49 @@ namespace CSharp_Opgaver
 
         static void Main(string[] args)
         {
-            Console.Title = "C# Opgaver";
             do
             {
-                Menu();
+                string[] options = {
+                    "1. Variables",
+                    "2. Strings",
+                    "3. Arithmetic expressions",
+                    "4. Variable expressions",
+                    "5. Boolean variables",
+                    "6. if-else statements",
+                    "7. Switch Case",
+                    "8. Loops",
+                    "9. Advanced control structures",
+                    "10. Methods and instances",
+                    "11. Return types and parameters",
+                    "12. Instance variables",
+                    "13. Inheritance",
+                    "14. Constructors",
+                    "15. Arrays",
+                    "16. Traversing arrays"
+                };
+
+                Action[] cases = {
+                    () => SubMenus.Variables(),
+                    () => SubMenus.Strings(),
+                    () => SubMenus.Arithmetic_expressions(),
+                    () => SubMenus.Variable_expressions(),
+                    () => SubMenus.Boolean_variables(),
+                    () => SubMenus.if_else_statements(),
+                    () => SubMenus.Switch_Case(),
+                    () => SubMenus.Loops(),
+                    () => SubMenus.Advanced_control_structures(),
+                    () => SubMenus.Methods_and_instances(),
+                    () => SubMenus.Return_types_and_parameters(),
+                    () => SubMenus.Instance_variables(),
+                    () => SubMenus.Inheritance(),
+                    () => SubMenus.Constructors(),
+                    () => SubMenus.Arrays(),
+                    () => SubMenus.Traversing_arrays() 
+                };
+
+                Menu.buildMain(options, cases);
 
             }while (!Exit);
-        }
-
-        static void Menu()
-        {
-            int subMenu = -1;
-
-            Console.Clear();
-
-            Console.WriteLine("Choose what task you want to run?: \n");
-
-            Console.WriteLine("\t1. Variables");
-            Console.WriteLine("\t2. Strings");
-            Console.WriteLine("\t3. Arithmetic Expressions");
-            Console.WriteLine("\t4. Variable expressions");
-            Console.WriteLine("\t5. Boolean variables");
-            Console.WriteLine("\t6. if-else statements");
-            Console.WriteLine("\t7. Switch Case");
-            Console.WriteLine("\t8. Loops");
-            Console.WriteLine("\t9. Advanced control structures");
-            Console.WriteLine("\t10. Methods and instances");
-            Console.WriteLine("\t11. Return types and parameters");
-            Console.WriteLine("\t12. Instance variables");
-            Console.WriteLine("\t13. Inheritance");
-            Console.WriteLine("\t14. Constructors");
-            Console.WriteLine("\t15. Arrays");
-            Console.WriteLine("\t16. Traversing arrays");
-            Console.WriteLine("\n\t0. Exit");
-
-            Console.Write("\n\tChoice: ");
-
-            try
-            {
-                subMenu = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(subMenu);
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(e);
-            }
-
-            SubMenu(subMenu);
-        }
-
-        static void SubMenu(int Case)
-        {
-            switch (Case)
-            {
-                case 1:
-                    {
-                        SubMenus.Variables();
-                        break;
-                    }
-                case 2:
-                    {
-                        SubMenus.Strings();
-                        break;
-                    }
-                case 3:
-                    {
-                        SubMenus.Menu3();
-                        break;
-                    }
-                case 4:
-                    {
-                        SubMenus.Menu4();
-                        break;
-                    }
-                case 5:
-                    {
-                        SubMenus.Menu5();
-                        break;
-                    }
-                case 6:
-                    {
-                        SubMenus.Menu6();
-                        break;
-                    }
-                case 7:
-                    {
-                        SubMenus.Menu7();
-                        break;
-                    }
-
-                case 0:
-                    {
-                        Exit = true;
-                        break;
-                    }
-                default:
-                    {
-                        Console.Clear();
-                        Console.WriteLine("Please enter a valid number!");
-                        Console.WriteLine("Press any key to continue...");
-                        Console.ReadKey();
-                        break;
-                    }
-            }
         }
     }
 }
