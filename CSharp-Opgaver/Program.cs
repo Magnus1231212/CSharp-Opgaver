@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,9 +54,9 @@ namespace CSharp_Opgaver
                 subMenu = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine(subMenu);
             }
-            catch
+            catch (Exception e)
             {
-
+                Debug.WriteLine(e);
             }
 
             SubMenu(subMenu);

@@ -11,63 +11,44 @@ namespace CSharp_Opgaver
     {
         public static void Variables()
         {
-            int choice = -1;
-            do {
-                string[] options = { 
-                    "\t1. Task 1 \t Desc: ", 
-                    "\t2. Task 2 \t Desc: ", 
-                    "\t3. Task 3 \t Desc: ", 
-                    "\t4. Task 4 \t Desc: ", 
-                    "\t5. Task 5 \t Desc: "
-                };
-                Menu.build("Variables", options);
+            string name = "Variables";
 
-                if (!int.TryParse(Console.ReadLine(), out choice)) 
-                {
-                    choice = -1;
-                }
+            string[] options = {
+                "\t1. Task 1 \t Desc: Grundlæggende variabler og udskrivning",
+                "\t2. Task 2 \t Desc: Udvidelse af variabeludskrivning",
+                "\t3. Task 3 \t Desc: Kompleks variabeludskrivning",
+                "\t4. Task 4 \t Desc: Brug af decimaltal og samlet udskrivning",
+                "\t5. Task 5 \t Desc: Brugerinput og sammensat tekst",
+                "\t6. Task 6 \t Desc: Beregning af cirkelareal med brugerinput"
+            };
 
-                switch (choice)
-                {
-                    case 1:
-                        {
-                            break;
-                        }
-                    case 2:
-                        {
-                            break;
-                        }
-                    case 3:
-                        {
-                            break;
-                        }
-                    case 4:
-                        {
-                            break;
-                        }
-                    case 5:
-                        {
-                            break;
-                        }
-                    case 0:
-                        {
-                            break;
-                        }
-                    default:
-                        {
-                            Console.Clear();
-                            Console.WriteLine("Please enter a valid number!");
-                            Console.WriteLine("Press any key to continue...");
-                            Console.ReadKey();
-                            break;
-                        }
+            Action[] cases = {
+                () => {
+                    Console.WriteLine("1");
+                    Console.ReadKey();
                 }
-            } while (choice != 0);
+            };
+
+            Menu.build(name, options, cases);
         }
 
         public static void Strings()
         {
+            string name = "Strings";
 
+            string[] options = {
+                "\t1. Task 1 \t Desc: Erklæring og Udskrivning af Variabletyper",
+                "\t2. Task 2 \t Desc: Ændring af Variabelværdi",
+                "\t3. Task 3 \t Desc: Erklæring og Udskrivning af String Variabel",
+                "\t4. Task 4 \t Desc: Sætningsopbygning med Variable"
+            };
+
+            Action[] cases =
+            {
+                () => Console.WriteLine("1"),
+            };
+
+            Menu.build(name, options, cases);
         }
 
         public static void Menu3()

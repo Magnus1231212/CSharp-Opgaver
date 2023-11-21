@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace CSharp_Opgaver.tasks.Variables
 {
-    internal class Opg2
+    internal class Variables
     {
+        public void Task1()
+        {
+            Console.WriteLine("Task 1");
+            Console.ReadKey();
+        }
     }
 }
