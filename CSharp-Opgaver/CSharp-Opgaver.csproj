@@ -48,9 +48,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubMenus.cs" />
     <Compile Include="tasks\Arithmetic_expressions\Arithmetic_expressions.cs" />
+    <Compile Include="tasks\Arrays\Arrays.cs" />
     <Compile Include="tasks\Boolean_variables\Boolean_variables.cs" />
     <Compile Include="tasks\If-else_statements\If-else_statements.cs" />
+    <Compile Include="tasks\Loops\Loops.cs" />
     <Compile Include="tasks\Strings\Strings.cs" />
+    <Compile Include="tasks\Switch_Case\Switch_Case.cs" />
     <Compile Include="tasks\Variables\Variables.cs" />
     <Compile Include="tasks\Variable_expressions\Variable_expressions.cs" />
   </ItemGroup>
@@ -58,16 +61,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="tasks\Arrays\" />
     <Folder Include="tasks\Constructors\" />
     <Folder Include="tasks\Extended-control-structures\" />
     <Folder Include="tasks\Inheritance\" />
     <Folder Include="tasks\Instance-variables\" />
-    <Folder Include="tasks\Loops\" />
     <Folder Include="tasks\Methods-and-instances\" />
     <Folder Include="tasks\Public-Private-and-Protected\" />
     <Folder Include="tasks\Return-types-and-parameters\" />
-    <Folder Include="tasks\Switch-Case\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

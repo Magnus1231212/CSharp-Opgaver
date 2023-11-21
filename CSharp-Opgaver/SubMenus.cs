@@ -1,7 +1,10 @@
 ﻿using CSharp_Opgaver.tasks.Arithmetic_expressions;
+using CSharp_Opgaver.tasks.Arrays;
 using CSharp_Opgaver.tasks.Boolean_variables;
 using CSharp_Opgaver.tasks.If_else_statements;
+using CSharp_Opgaver.tasks.Loops;
 using CSharp_Opgaver.tasks.Strings;
+using CSharp_Opgaver.tasks.Switch_Case;
 using CSharp_Opgaver.tasks.Variable_expressions;
 using CSharp_Opgaver.tasks.Variables;
 using System;
@@ -145,12 +148,47 @@ namespace CSharp_Opgaver
 
         public static void Switch_Case()
         {
+            Switch_Case_Tasks switch_case_tasks = new Switch_Case_Tasks();
 
+            string name = "Switch Case";
+
+            string[] options = {
+                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => switch_case_tasks.Task1(),
+                () => switch_case_tasks.Task2(),
+            };
+
+            Menu.buildSub(name, options, cases);
         }
 
         public static void Loops()
         {
+            Loops_Tasks loops_tasks = new Loops_Tasks();
 
+            string name = "Loops";
+
+            string[] options = {
+                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => loops_tasks.Task1(),
+                () => loops_tasks.Task2(),
+                () => loops_tasks.Task3(),
+                () => loops_tasks.Task4(),
+                () => loops_tasks.Task5(),
+                () => loops_tasks.Task6(),
+                () => loops_tasks.Task7(),
+                () => loops_tasks.Task8(),
+                () => loops_tasks.Task9()
+            };
+
+            Menu.buildSub(name, options, cases);
         }
 
         public static void Advanced_control_structures()
@@ -185,7 +223,20 @@ namespace CSharp_Opgaver
 
         public static void Arrays()
         {
+            Arrays_Tasks arrays_tasks = new Arrays_Tasks();
 
+            string name = "Arrays";
+
+            string[] options = {
+                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => arrays_tasks.Task1(),
+            };
+
+            Menu.buildSub(name, options, cases);
         }
 
         public static void Traversing_arrays()
