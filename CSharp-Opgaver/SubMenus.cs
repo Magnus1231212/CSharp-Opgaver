@@ -1,8 +1,11 @@
-﻿using CSharp_Opgaver.tasks.Arithmetic_expressions;
+﻿using CSharp_Opgaver.tasks.Constructors;
+using CSharp_Opgaver.tasks.Arithmetic_expressions;
 using CSharp_Opgaver.tasks.Arrays;
 using CSharp_Opgaver.tasks.Boolean_variables;
+using CSharp_Opgaver.tasks.Extended_control_structures;
 using CSharp_Opgaver.tasks.If_else_statements;
 using CSharp_Opgaver.tasks.Loops;
+using CSharp_Opgaver.tasks.Methods_and_instances;
 using CSharp_Opgaver.tasks.Strings;
 using CSharp_Opgaver.tasks.Switch_Case;
 using CSharp_Opgaver.tasks.Variable_expressions;
@@ -191,34 +194,112 @@ namespace CSharp_Opgaver
             Menu.buildSub(name, options, cases);
         }
 
-        public static void Advanced_control_structures()
+        public static void Extended_control_structures()
         {
+            Extended_control_structures_Tasks extended_control_structures_tasks = new Extended_control_structures_Tasks();
 
+            string name = "Extended control structures";
+
+            string[] options = {
+                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => extended_control_structures_tasks.Task1(),
+                () => extended_control_structures_tasks.Task2(),
+                () => extended_control_structures_tasks.Task3(),
+                () => extended_control_structures_tasks.Task4(),
+                () => extended_control_structures_tasks.Task5()
+            };
+
+            Menu.buildSub(name, options, cases);
         }
 
         public static void Methods_and_instances()
         {
+            Methods_and_instances_Tasks methods_and_instances_tasks = new Methods_and_instances_Tasks();
 
+            string name = "Methods and instances";
+
+            string[] options = {
+                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => methods_and_instances_tasks.Task1(),
+                () => methods_and_instances_tasks.Task2(),
+            };
+
+            Menu.buildSub(name, options, cases);
         }
 
         public static void Return_types_and_parameters()
         {
+            string name = "Arrays";
 
+            string[] options = {
+                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => {},
+            };
+
+            Menu.buildSub(name, options, cases);
         }
 
         public static void Instance_variables()
         {
+            string name = "Arrays";
 
+            string[] options = {
+                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => {},
+            };
+
+            Menu.buildSub(name, options, cases);
         }
 
         public static void Inheritance()
         {
+            string name = "Inheritance";
 
+            string[] options = {
+                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => {},
+            };
+
+            Menu.buildSub(name, options, cases);
         }
 
         public static void Constructors()
         {
+            Constructors_Tasks constructors_tasks = new Constructors_Tasks();
 
+            string name = "Constructors";
+
+            string[] options = {
+                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => constructors_tasks.Task1(),
+            };
+
+            Menu.buildSub(name, options, cases);
         }
 
         public static void Arrays()

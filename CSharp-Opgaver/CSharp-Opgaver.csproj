@@ -50,8 +50,10 @@
     <Compile Include="tasks\Arithmetic_expressions\Arithmetic_expressions.cs" />
     <Compile Include="tasks\Arrays\Arrays.cs" />
     <Compile Include="tasks\Boolean_variables\Boolean_variables.cs" />
+    <Compile Include="tasks\Extended_control_structures\Extended_control_structures.cs" />
     <Compile Include="tasks\If-else_statements\If-else_statements.cs" />
     <Compile Include="tasks\Loops\Loops.cs" />
+    <Compile Include="tasks\Methods_and_instances\Methods_and_instances.cs" />
     <Compile Include="tasks\Strings\Strings.cs" />
     <Compile Include="tasks\Switch_Case\Switch_Case.cs" />
     <Compile Include="tasks\Variables\Variables.cs" />
@@ -62,10 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="tasks\Constructors\" />
-    <Folder Include="tasks\Extended-control-structures\" />
     <Folder Include="tasks\Inheritance\" />
     <Folder Include="tasks\Instance-variables\" />
-    <Folder Include="tasks\Methods-and-instances\" />
     <Folder Include="tasks\Public-Private-and-Protected\" />
     <Folder Include="tasks\Return-types-and-parameters\" />
   </ItemGroup>
