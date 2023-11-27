@@ -10,13 +10,27 @@ namespace CSharp_Opgaver.tasks.Strings
     {
         public void Task1()
         {
-            Console.WriteLine("Task 1");
-            Console.ReadKey();
+            int var1 = 54;
+            string var2 = "Hej";
+            double var3 = 5.34;
+
+            Console.WriteLine(var1);
+            Console.WriteLine(var2);
+            Console.WriteLine(var3);
         }
         public void Task2()
         {
-            Console.WriteLine("Task 2");
-            Console.ReadKey();
+            int var1 = 54;
+            string var2 = "Hej";
+            double var3 = 5.34;
+
+            Console.WriteLine("Indtast venligst et heltal");
+            var1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(var1);
+            Console.WriteLine(var2);
+            Console.WriteLine(var3);
+
         }
 
         public void Task3()

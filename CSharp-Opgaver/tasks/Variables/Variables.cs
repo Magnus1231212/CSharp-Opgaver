@@ -10,38 +10,57 @@ namespace CSharp_Opgaver.tasks.Variables
     {
         public void Task1()
         {
-            Console.WriteLine("Task 1");
-            Console.ReadKey();
+            int tal1 = 5;
+            int tal2 = 3;
+            Console.WriteLine(tal1);
+            Console.WriteLine(tal2);
         }
 
         public void Task2()
         {
-            Console.WriteLine("Task 2");
-            Console.ReadKey();
+            int tal1 = 5;
+            int tal2 = 3;
+            Console.WriteLine($"Tal1 er {tal1}");
+            Console.WriteLine($"Tal2 er {tal2}");
         }
 
         public void Task3()
         {
-            Console.WriteLine("Task 3");
-            Console.ReadKey();
+            string Navn = "Søren";
+            int Alder = 16;
+            double Penge = 1234.34;
+            Console.WriteLine($"Jeg hedder {Navn}, er {Alder} år gammel og har tjent {Penge} kr. på at lappe cykler");
         }
 
         public void Task4()
         {
-            Console.WriteLine("Task 4");
-            Console.ReadKey();
+            double Kage = 23.56;
+            double Øl = 34.67;
+            double Pølse = 65.34;
+            Console.WriteLine($"Kage\t {Kage}");
+            Console.WriteLine($"Øl\t {Øl}");
+            Console.WriteLine($"Pølse\t {Pølse}");
+            Console.WriteLine($"I alt\t {Kage + Øl + Pølse}");
         }
 
         public void Task5()
         {
-            Console.WriteLine("Task 5");
-            Console.ReadKey();
+            Console.WriteLine("Indtast venligst dit navn");
+            string Navn = Console.ReadLine();
+            Console.WriteLine("Indtast venligst din alder");
+            int Alder = int.Parse(Console.ReadLine());
+            Console.WriteLine($"\nJeg hedder {Navn} og er {Alder} år gammel.");
         }
 
         public void Task6()
         {
-            Console.WriteLine("Task 6");
-            Console.ReadKey();
+            Console.WriteLine("Indtast venligst en radius");
+            double Radius = double.Parse(Console.ReadLine());
+            double PI = Math.PI;
+            double R2 = Math.Pow(Radius, 2);
+            Console.WriteLine($"\nAreal = {PI * R2}");
+            Console.WriteLine($"Pi = {PI}");
+            Console.WriteLine($"R2 = {R2}");
         }
     }
 }

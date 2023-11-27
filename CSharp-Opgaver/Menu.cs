@@ -89,12 +89,15 @@ namespace CSharp_Opgaver
 
                 if(choice >= 1 && choice <= Options.Length)
                 {
+                    Console.Clear();
                     try {
                         Cases[choice - 1]();
                     } catch (Exception e)
                     {
                         Debug.WriteLine(e);
                     }
+                    Console.WriteLine("\nPress any key to continue...");
+                    Console.ReadKey();
                 }
                 else if (choice == 0)
                 {
