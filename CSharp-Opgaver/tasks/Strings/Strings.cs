@@ -18,6 +18,7 @@ namespace CSharp_Opgaver.tasks.Strings
             Console.WriteLine(var2);
             Console.WriteLine(var3);
         }
+
         public void Task2()
         {
             int var1 = 54;
@@ -35,8 +36,8 @@ namespace CSharp_Opgaver.tasks.Strings
 
         public void Task3()
         {
-            Console.WriteLine("Task 3");
-            Console.ReadKey();
+            string udskrivning = "I dag har vi den 24. December";
+            Console.WriteLine(udskrivning);
         }
 
         public void Task4()
