@@ -238,7 +238,7 @@ namespace CSharp_Opgaver
 
         public static void Return_types_and_parameters()
         {
-            string name = "Arrays";
+            string name = "Return types and parameters";
 
             string[] options = {
                 "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
@@ -254,7 +254,7 @@ namespace CSharp_Opgaver
 
         public static void Instance_variables()
         {
-            string name = "Arrays";
+            string name = "Instance Variables";
 
             string[] options = {
                 "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
