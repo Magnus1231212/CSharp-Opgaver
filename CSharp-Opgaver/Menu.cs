@@ -14,7 +14,7 @@ namespace CSharp_Opgaver
             int choice = -1;
             do
             {
-                Console.Title = "C# Opgaver";
+                Console.Title = "C# Opgaver - Home";
 
                 Console.Clear();
 

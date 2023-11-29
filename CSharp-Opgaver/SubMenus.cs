@@ -322,7 +322,20 @@ namespace CSharp_Opgaver
 
         public static void Traversing_arrays()
         {
+            Arrays_Tasks arrays_tasks = new Arrays_Tasks();
 
+            string name = "Arrays";
+
+            string[] options = {
+                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
+                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+            };
+
+            Action[] cases = {
+                () => arrays_tasks.Task1(),
+            };
+
+            Menu.buildSub(name, options, cases);
         }
     }
 }

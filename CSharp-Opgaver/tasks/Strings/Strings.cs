@@ -42,8 +42,10 @@ namespace CSharp_Opgaver.tasks.Strings
 
         public void Task4()
         {
-            Console.WriteLine("Task 4");
-            Console.ReadKey();
+            double number = 200.50;
+            string first = "Jeg har";
+            string last = "kr. i banken.";
+            Console.WriteLine($"{first} {number}{last}");
         }
     }
 }
