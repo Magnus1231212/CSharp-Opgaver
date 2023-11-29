@@ -27,7 +27,7 @@ namespace CSharp_Opgaver
 
                 Console.WriteLine("\n\t0. Exit");
 
-                Console.Write("\n\tChoice: ");
+                Console.Write("\nChoice: ");
 
                 if (!int.TryParse(Console.ReadLine(), out choice))
                 {
@@ -80,7 +80,7 @@ namespace CSharp_Opgaver
 
                 Console.WriteLine("\n\t0. Go Back");
 
-                Console.Write("\n\tChoice: ");
+                Console.Write("\nChoice: ");
 
                 if (!int.TryParse(Console.ReadLine(), out choice))
                 {
