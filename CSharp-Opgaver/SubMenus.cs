@@ -21,12 +21,16 @@ namespace CSharp_Opgaver
 {
     internal class SubMenus
     {
+        // Submenus
         public static void Variables()
         {
+            // Create instance of Variables_Tasks
             Variables_Tasks variables_tasks = new Variables_Tasks();
 
+            // Name of submenu
             string name = "Variables";
 
+            // Options to be displayed
             string[] options = {
                 "1. Task 1 \t Desc: Grundlæggende variabler og udskrivning",
                 "2. Task 2 \t Desc: Udvidelse af variabeludskrivning",
@@ -36,6 +40,7 @@ namespace CSharp_Opgaver
                 "6. Task 6 \t Desc: Beregning af cirkelareal med brugerinput"
             };
 
+            // Array of actions to be called
             Action[] cases = {
                 () => variables_tasks.Task1(),
                 () => variables_tasks.Task2(),
@@ -45,6 +50,7 @@ namespace CSharp_Opgaver
                 () => variables_tasks.Task6()
             };
 
+            // Build submenu
             Menu.buildSub(name, options, cases);
         }
 
