@@ -8,6 +8,7 @@ namespace CSharp_Opgaver.tasks.Variables
 {
     internal class Variables_Tasks
     {
+        // Opgave 1
         public void Task1()
         {
             int tal1 = 5;
@@ -16,6 +17,7 @@ namespace CSharp_Opgaver.tasks.Variables
             Console.WriteLine(tal2);
         }
 
+        // Opgave 2
         public void Task2()
         {
             int tal1 = 5;
@@ -24,6 +26,7 @@ namespace CSharp_Opgaver.tasks.Variables
             Console.WriteLine($"Tal2 er {tal2}");
         }
 
+        // Opgave 3
         public void Task3()
         {
             string Navn = "Søren";
@@ -32,6 +35,7 @@ namespace CSharp_Opgaver.tasks.Variables
             Console.WriteLine($"Jeg hedder {Navn}, er {Alder} år gammel og har tjent {Penge} kr. på at lappe cykler");
         }
 
+        // Opgave 4
         public void Task4()
         {
             double Kage = 23.56;
@@ -43,6 +47,7 @@ namespace CSharp_Opgaver.tasks.Variables
             Console.WriteLine($"I alt\t {Kage + Øl + Pølse}");
         }
 
+        // Opgave 5
         public void Task5()
         {
             Console.WriteLine("Indtast venligst dit navn");
@@ -52,6 +57,7 @@ namespace CSharp_Opgaver.tasks.Variables
             Console.WriteLine($"\nJeg hedder {Navn} og er {Alder} år gammel.");
         }
 
+        // Opgave 6
         public void Task6()
         {
             Console.WriteLine("Indtast venligst en radius");

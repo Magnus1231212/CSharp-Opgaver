@@ -9,6 +9,7 @@ namespace CSharp_Opgaver
 {
     internal class Menu
     {
+        // Main Menu Builder
         public static void buildMain(string[] Options, Action[] Cases)
         {
             int choice = -1;
@@ -62,6 +63,7 @@ namespace CSharp_Opgaver
             } while (choice != 0);
         }
 
+        // Sub Menu Builder
         public static void buildSub(string Menu, string[] Options, Action[] Cases)
         {
             int choice = -1;

@@ -13,8 +13,10 @@ namespace CSharp_Opgaver
 
         static void Main(string[] args)
         {
+            // Main menu
             do
             {
+                // Array of options to be displayed
                 string[] options = {
                     "1. Variables",
                     "2. Strings",
@@ -34,6 +36,7 @@ namespace CSharp_Opgaver
                     "16. Traversing arrays"
                 };
 
+                // Array of actions to be called
                 Action[] cases = {
                     () => SubMenus.Variables(),
                     () => SubMenus.Strings(),
@@ -53,6 +56,7 @@ namespace CSharp_Opgaver
                     () => SubMenus.Traversing_arrays() 
                 };
 
+                // Build main menu
                 Menu.buildMain(options, cases);
 
             }while (!Exit);

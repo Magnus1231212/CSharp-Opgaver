@@ -8,6 +8,7 @@ namespace CSharp_Opgaver.tasks.Strings
 {
     internal class Strings_Tasks
     {
+        // Opgave 1
         public void Task1()
         {
             int var1 = 54;
@@ -19,6 +20,7 @@ namespace CSharp_Opgaver.tasks.Strings
             Console.WriteLine(var3);
         }
 
+        // Opgave 2
         public void Task2()
         {
             int var1 = 54;
@@ -34,12 +36,15 @@ namespace CSharp_Opgaver.tasks.Strings
 
         }
 
+        // Opgave 3
         public void Task3()
         {
             string udskrivning = "I dag har vi den 24. December";
             Console.WriteLine(udskrivning);
         }
 
+
+        // Opgave 4
         public void Task4()
         {
             double number = 200.50;
