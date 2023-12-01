@@ -309,8 +309,7 @@ namespace CSharp_Opgaver
             string name = "Arrays";
 
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Arbejde med Arrays",
             };
 
             Action[] cases = {
@@ -327,8 +326,7 @@ namespace CSharp_Opgaver
             string name = "Arrays";
 
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Arbejde med et String og Numerisk Array og For-løkke",
             };
 
             Action[] cases = {
