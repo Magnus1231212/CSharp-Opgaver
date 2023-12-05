@@ -10,8 +10,17 @@ namespace CSharp_Opgaver.tasks.Arithmetic_expressions
     {
         public void Task1()
         {
-            Console.WriteLine("Task 1");
-            Console.ReadKey();
+            int regnestykke1 = 2 + 1 * 2;
+            int regnestykke2 = (2 + 1) * 2;
+            int regnestykke3 = 5 / 2;
+            int regnestykke4 = 8 % 3;
+            int regnestykke5 = 1 - 5;
+
+            Console.WriteLine(regnestykke1);
+            Console.WriteLine(regnestykke2);
+            Console.WriteLine(regnestykke3);
+            Console.WriteLine(regnestykke4);
+            Console.WriteLine(regnestykke5);
         }
     }
 }
