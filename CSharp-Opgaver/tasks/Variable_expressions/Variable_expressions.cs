@@ -10,14 +10,30 @@ namespace CSharp_Opgaver.tasks.Variable_expressions
     {
         public void Task1()
         {
-            Console.WriteLine("Task 1");
-            Console.ReadKey();
+            int a = 5;
+            int b = 10;
+            int c = 15;
+            int result = a + b * c;
+
+            Console.WriteLine($"a: {a}");
+            Console.WriteLine($"b: {b}");
+            Console.WriteLine($"c: {c}");
+            Console.WriteLine(result);
         }
 
         public void Task2()
         {
-            Console.WriteLine("Task 2");
-            Console.ReadKey();
+            int a = 10;
+            double b = 3.5;
+            int kim = 7;
+            double result;
+
+            result = a + b + kim;
+
+            Console.WriteLine($"a: {a}");
+            Console.WriteLine($"b: {b}");
+            Console.WriteLine($"kim: {kim}");
+            Console.WriteLine($"result: {result}");
         }
     }
 }
