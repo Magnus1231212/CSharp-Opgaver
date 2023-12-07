@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CSharp_Opgaver.tasks.If_else_statements
@@ -128,7 +129,28 @@ namespace CSharp_Opgaver.tasks.If_else_statements
 
         public void Task7()
         {
+            Console.Title = "Festen";
 
+            Console.Write("Hvilken farve foretrækker du: rød, grøn, blå eller gul? ");
+            string yndlingsfarve = Console.ReadLine();
+
+            Console.Write("Hvor gammel er du? ");
+            string alderStr = Console.ReadLine();
+            int alder = Convert.ToInt32(alderStr);
+
+            Console.WriteLine($"Baggrundsfarven sættes til {yndlingsfarve} efterfulgt af Clear.");
+
+            if (alder > 18)
+            {
+                Console.WriteLine("Velkommen til cocktailbaren!");
+            }
+            else
+            {
+                Console.WriteLine("Velkommen til sodavandsbaren.");
+            }
+
+            Thread.Sleep(10000);
+            Console.WriteLine("Programmet lukker nu.");
         }
     }
 }
