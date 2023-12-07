@@ -83,14 +83,52 @@ namespace CSharp_Opgaver.tasks.If_else_statements
 
         public void Task5()
         {
-            Console.WriteLine("Task 5");
-            Console.ReadKey();
+            string name = "Karl";
+            string brugernavn = "Karl123";
+            string password = "123";
+
+            Console.WriteLine("Indtast dit brugernavn!");
+            string UserN = Console.ReadLine();
+
+            if(UserN == brugernavn)
+            {
+                Console.WriteLine("Indtast dit password!");
+                string UserP = Console.ReadLine();
+
+                if(UserP == password)
+                {
+                    Console.WriteLine($"Velkommen {name}");
+                } else
+                {
+                    Console.WriteLine("Password er forkert!");
+                }
+            } else
+            {
+                Console.WriteLine("Brugernavn er forkert!");
+            }
+
         }
 
         public void Task6()
         {
-            Console.WriteLine("Task 6");
-            Console.ReadKey();
+            Console.WriteLine("Hvor mange km køre du hver dag til og fra arbejde?");
+            int km = Convert.ToInt32(Console.ReadLine());
+
+            if (km < 24)
+            {
+                Console.WriteLine("Du får ikke noget fradrag.");
+            } else if (km > 25 && km < 120)
+            {
+                Console.WriteLine($"Du får {(km - 24) * 1,93}Kr i fradrag.");
+            } else if (km > 121)
+            {
+                Console.WriteLine($"Du får {(km - 120) * 0,97}Kr i fradrag.");
+            }
+        }
+
+        public void Task7()
+        {
+
         }
     }
 }

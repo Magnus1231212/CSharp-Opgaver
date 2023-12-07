@@ -173,7 +173,8 @@ namespace CSharp_Opgaver
                 () => if_else_ttatements_tasks.Task3(),
                 () => if_else_ttatements_tasks.Task4(),
                 () => if_else_ttatements_tasks.Task5(),
-                () => if_else_ttatements_tasks.Task6()
+                () => if_else_ttatements_tasks.Task6(),
+                () => if_else_ttatements_tasks.Task7()
             };
 
             // Build submenu
