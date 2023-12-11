@@ -10,12 +10,34 @@ namespace CSharp_Opgaver.tasks.Extended_control_structures
     {
         public void Task1()
         {
-            Console.WriteLine("Task 1");
+            for (int l = 1; l <= 10; l++)
+            {
+                int number = l * 7;
+
+                Console.WriteLine(number);
+
+                if (number == 21)
+                {
+                    Console.WriteLine("Loopen er nu stoppet.");
+                    break;
+                }
+            }
         }
 
         public void Task2()
         {
-            Console.WriteLine("Task 2");
+            int number = 0;
+
+            while (number <= 10)
+            {
+                if(number * 4 != 16)
+                {
+                    Console.WriteLine(number * 4);
+                }
+
+                number++;
+            }
+            Console.WriteLine("Loopen er nu stoppet.");
         }
 
         public void Task3()
