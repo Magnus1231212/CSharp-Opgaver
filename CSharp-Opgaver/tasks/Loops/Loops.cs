@@ -104,17 +104,115 @@ namespace CSharp_Opgaver.tasks.Loops
 
         public void Task7()
         {
+            int startX = 20;
+            int startY = 4;
+            int endX = 30;
+            int endY = 8;
 
+            for (int x = startX; x <= endX; x++)
+            {
+                Console.SetCursorPosition(x, startY);
+                Console.Write("*");
+            }
+
+            for (int y = startY + 1; y <= endY; y++)
+            {
+                Console.SetCursorPosition(endX, y);
+                Console.Write("*");
+            }
+
+            for (int x = endX - 1; x >= startX; x--)
+            {
+                Console.SetCursorPosition(x, endY);
+                Console.Write("*");
+            }
+
+            for (int y = endY - 1; y > startY; y--)
+            {
+                Console.SetCursorPosition(startX, y);
+                Console.Write("*");
+            }
         }
 
         public void Task8()
         {
+            int startX = 20;
+            int startY = 4;
+            int endX = 30;
+            int endY = 8;
 
+            for (int x = startX; x <= endX; x++)
+            {
+                Console.SetCursorPosition(x, startY);
+                Console.Write("*");
+            }
+
+            for (int y = startY + 1; y <= endY; y++)
+            {
+                Console.SetCursorPosition(endX, y);
+                Console.Write("*");
+            }
+
+            for (int x = endX - 1; x >= startX; x--)
+            {
+                Console.SetCursorPosition(x, endY);
+                Console.Write("*");
+            }
+
+            for (int y = endY - 1; y > startY; y--)
+            {
+                Console.SetCursorPosition(startX, y);
+                Console.Write("*");
+            }
+
+            Console.SetCursorPosition(startX + 2, endY - 2);
+            Console.Write("Magnus");
         }
 
         public void Task9()
         {
+            int startX = 20;
+            int startY = 4;
+            string symbol = "*";
 
+            Console.WriteLine("Indtast brede");
+            int width = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Indtast højde");
+            int height = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("indtast Navn");
+            string Name = Console.ReadLine();
+            int NameLenght = Name.Length;
+
+            Console.Clear();
+
+            for (int x = startX; x < startX + width; x++)
+            {
+                Console.SetCursorPosition(x, startY);
+                Console.Write(symbol);
+            }
+
+            for (int y = startY + 1; y < startY + height; y++)
+            {
+                Console.SetCursorPosition(startX + width - 1, y);
+                Console.Write(symbol);
+            }
+
+            for (int x = startX + width - 2; x >= startX; x--)
+            {
+                Console.SetCursorPosition(x, startY + height - 1);
+                Console.Write(symbol);
+            }
+
+            for (int y = startY + height - 2; y > startY; y--)
+            {
+                Console.SetCursorPosition(startX, y);
+                Console.Write(symbol);
+            }
+
+            Console.SetCursorPosition(startX + 2, startY + 2);
+            Console.Write(Name);
         }
     }
 }
