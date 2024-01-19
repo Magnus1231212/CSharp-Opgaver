@@ -35,7 +35,7 @@ namespace CSharp_Opgaver
                     "15. Arrays",
                     "16. Traversing arrays"
                 };
-
+                
                 // Array of actions to be called
                 Action[] cases = {
                     () => SubMenus.Variables(),
