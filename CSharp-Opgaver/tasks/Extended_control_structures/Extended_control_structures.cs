@@ -42,7 +42,18 @@ namespace CSharp_Opgaver.tasks.Extended_control_structures
 
         public void Task3()
         {
-            Console.WriteLine("Task 3");
+            Console.WriteLine("Indtast Km");
+            int km = Convert.ToInt32(Console.ReadLine());
+            if(km <= 24)
+            {
+                Console.WriteLine("Du kan ikke få et fradrag");
+            } else if(km >= 25 && km <= 100)
+            {
+                Console.WriteLine("Du kan få et fradrag på 1,93 kr. pr. km");
+            } else if (km > 100) 
+            {
+                Console.WriteLine("Du kan få et fradrag på 0,77 kr. pr. km");
+            }
         }
 
         public void Task4()
