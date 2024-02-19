@@ -14,7 +14,6 @@
     <Folder Include="tasks\Inheritance\" />
     <Folder Include="tasks\Instance-variables\" />
     <Folder Include="tasks\Public-Private-and-Protected\" />
-    <Folder Include="tasks\Return-types-and-parameters\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />

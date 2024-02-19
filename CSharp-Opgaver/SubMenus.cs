@@ -16,6 +16,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using CSharp_Opgaver.tasks.Return_types_and_parameters;
 
 namespace CSharp_Opgaver
 {
@@ -299,6 +300,9 @@ namespace CSharp_Opgaver
 
         public static void Return_types_and_parameters()
         {
+            // Create instance of Return_types_and_parameters
+            Return_types_and_parameters return_types_and_parameters = new Return_types_and_parameters();
+
             // Name of submenu
             string name = "Return types and parameters";
 
@@ -306,11 +310,16 @@ namespace CSharp_Opgaver
             string[] options = {
                 "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
                 "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "3. Task 3 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "4. Task 4 \t Desc: Kompleks Operation med Tal og Variabelnavne",
             };
 
             // Array of actions to be called
             Action[] cases = {
-                () => {},
+                () => return_types_and_parameters.Task1(),
+                () => return_types_and_parameters.Task2(),
+                () => return_types_and_parameters.Task3(),
+                () => return_types_and_parameters.Task4(),
             };
 
             // Build submenu
