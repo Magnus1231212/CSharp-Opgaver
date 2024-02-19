@@ -58,12 +58,44 @@ namespace CSharp_Opgaver.tasks.Extended_control_structures
 
         public void Task4()
         {
-            Console.WriteLine("Task 4");
+            Console.WriteLine("Indtast Løn");
+            int løn = Convert.ToInt32(Console.ReadLine());
+            if (løn < 42000)
+            {
+                Console.WriteLine("Du skal ikke betale skat");
+            }
+            else if (løn > 42000 && løn < 280000)
+            {
+                Console.WriteLine("Du skal betale bundskat på 30%");
+            }
+            else if (løn > 280000 && løn < 390000)
+            {
+                Console.WriteLine("Du skal betale 6% mellemskat");
+            } 
+            else if (løn > 390000)
+            {
+                Console.WriteLine("Du skal betale 15% topskat");
+            }
         }
 
         public void Task5()
         {
-            Console.WriteLine("Task 5");
+            Console.WriteLine("Hvor mange penge har du på den konto");
+            double saldo = Convert.ToInt32(Console.ReadLine());
+            if (saldo < 25000)
+            {
+                Console.WriteLine($"Din rente er {saldo * 0.25 / 100}Kr");
+            }
+            else if (saldo >= 25000 && saldo <= 150000)
+            {
+                Console.WriteLine($"Din rente er {saldo * 1.25 / 100}Kr");
+            }
+            else
+            {
+                double føstedel = 150000 * 1.25 / 100;
+                double andendel = (saldo - 150000) * 0.5 / 100;
+                Console.WriteLine($"Din rente er {føstedel + andendel}Kr");
+            }
         }
     }
 }

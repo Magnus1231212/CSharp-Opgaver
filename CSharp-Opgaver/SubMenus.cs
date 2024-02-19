@@ -255,7 +255,9 @@ namespace CSharp_Opgaver
             string[] options = {
                 "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
                 "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "3. Task 3 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "4. Task 4 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "5. Task 5 \t Desc: Kompleks Operation med Tal og Variabelnavne",
             };
 
             // Array of actions to be called

@@ -10,12 +10,21 @@ namespace CSharp_Opgaver.tasks.Methods_and_instances
     {
         public void Task1()
         {
-            Console.WriteLine("Task 1");
+            Bog SherlockHolmes = new Bog();
+            Console.WriteLine(SherlockHolmes.PrintInfo());
         }
 
         public void Task2()
         {
             Console.WriteLine("Task 2");
+        }
+    }
+
+    public class Bog
+    {
+        public string PrintInfo()
+        {
+            return "Jeg er en bog";
         }
     }
 }
