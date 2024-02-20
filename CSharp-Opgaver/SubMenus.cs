@@ -426,7 +426,7 @@ namespace CSharp_Opgaver
 
             // Array of actions to be called
             Action[] cases = {
-                () => arrays_tasks.Task1(),
+                () => arrays_tasks.Task2(),
             };
 
             // Build submenu
