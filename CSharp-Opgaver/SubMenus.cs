@@ -17,6 +17,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using CSharp_Opgaver.tasks.Return_types_and_parameters;
+using CSharp_Opgaver.tasks.Instance_variables;
+using CSharp_Opgaver.tasks.Inheritance;
 
 namespace CSharp_Opgaver
 {
@@ -140,8 +142,7 @@ namespace CSharp_Opgaver
 
             // Options to be displayed
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Erklær to int variabler og tildel dem en værdi. Erklær en boolean variabel",
             };
 
             // Array of actions to be called
@@ -163,8 +164,13 @@ namespace CSharp_Opgaver
 
             // Options to be displayed
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Erklær tal1 og tal2 som int og tildel dem værdierne 42 og 64. Udskriv passende besked baseret på summen",
+                "2. Task 2 \t Desc: Bed brugeren om alder. Udskriv 'Du er for gammel.' hvis alderen er over 57; ellers 'Du er ikke for gammel",
+                "3. Task 3 \t Desc: Spørg om alder og udskriv passende besked",
+                "4. Task 4 \t Desc: Bed om navn, brugernavn og password. Udskriv passende besked",
+                "5. Task 5 \t Desc: Spørg først om brugernavn. Udskriv passende besked baseret på svar",
+                "6. Task 6 \t Desc: Spørg brugeren om daglig kørselsafstand til og fra arbejde. Udskriv passende fradrag baseret på kørselsafstand",
+                "7. Task 7 \t Desc: Spørg om farve og alder. Baggrundsfarve sættes og Clear. Hvis over 18, cocktailbar; ellers sodavandsbar",
             };
 
             // Array of actions to be called
@@ -192,8 +198,8 @@ namespace CSharp_Opgaver
 
             // Options to be displayed
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Bed brugeren om et tal mellem 1 og 6",
+                "2. Task 2 \t Desc: Lav en drinkmenu",
             };
 
             // Array of actions to be called
@@ -216,15 +222,15 @@ namespace CSharp_Opgaver
 
             // Options to be displayed
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "3. Task 3 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "4. Task 4 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "5. Task 5 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "6. Task 6 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "7. Task 7 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "8. Task 8 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "9. Task 9 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Lav et program til at udskrive tal fra 1 til 10",
+                "2. Task 2 \t Desc: Gør opgave 1 om, så den tæller fra 100 til 1 ved hjælp af både et while-loop og et for-loop",
+                "3. Task 3 \t Desc: Lav et for-loop der udskriver den lille 5-tabel",
+                "4. Task 4 \t Desc: Lav et while-loop og et for-loop, der udskriver talrækkefølgen: 20-0",
+                "5. Task 5 \t Desc: Lav et for-loop til at udskrive 7-tabellen",
+                "6. Task 6 \t Desc: Udvid opgave 5, så brugeren selv indtaster hvilken tabel der skal udskrives",
+                "7. Task 7 \t Desc: Lav et program til at tegne en ramme på skærmen",
+                "8. Task 8 \t Desc: Udvid opgave 1, så den skriver dit navn i midten af rammen",
+                "9. Task 9 \t Desc: Udvid opgave 2, så brugeren selv indtaster rammestørrelse og navnet",
             };
 
             // Array of actions to be called
@@ -254,11 +260,11 @@ namespace CSharp_Opgaver
 
             // Options to be displayed
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "3. Task 3 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "4. Task 4 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "5. Task 5 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Lav et for-loop der udskriver 3-tabellen",
+                "2. Task 2 \t Desc: Lav et while-loop til at udskrive 4-tabellen med en if-sætning, der springer over tallet 16",
+                "3. Task 3 \t Desc: Lav et program til at udregne befordringsfradrag",
+                "4. Task 4 \t Desc: Lav et program til at bestemme skattens art baseret på indkomst",
+                "5. Task 5 \t Desc: Lav et program til at beregne renten på en rentekonto i banken",
             };
 
             // Array of actions to be called
@@ -284,8 +290,8 @@ namespace CSharp_Opgaver
 
             // Options to be displayed
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Opret Bøger projekt, klasse Bog med PrintInfo metode",
+                "2. Task 2 \t Desc: Opret en ny metode kaldet HarRåd i Bog klassen",
             };
 
             // Array of actions to be called
@@ -308,10 +314,10 @@ namespace CSharp_Opgaver
 
             // Options to be displayed
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "3. Task 3 \t Desc: Kompleks Operation med Tal og Variabelnavne",
-                "4. Task 4 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Lav en klasse Bil med start- og slukmetoder",
+                "2. Task 2 \t Desc: Tilføj FillGas metode til Bil og test fra Program",
+                "3. Task 3 \t Desc: Tilføj bool-parameter til FillGas metoden",
+                "4. Task 4 \t Desc: Opret RemainingGas metoden i Bil klassen",
             };
 
             // Array of actions to be called
@@ -328,18 +334,20 @@ namespace CSharp_Opgaver
 
         public static void Instance_variables()
         {
+            // Create instance of Instance_variables
+            Instance_variables instance_variables_tasks = new Instance_variables();
+
             // Name of submenu
             string name = "Instance Variables";
 
             // Options to be displayed
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Udvid Bog klassen med pris og titel variabler",
             };
 
             // Array of actions to be called
             Action[] cases = {
-                () => {},
+                () => instance_variables_tasks.Task1(),
             };
 
             // Build submenu
@@ -348,18 +356,20 @@ namespace CSharp_Opgaver
 
         public static void Inheritance()
         {
+            // Create instance of Inheritance
+            Inheritance inheritance_tasks = new Inheritance();
+
             // Name of submenu
             string name = "Inheritance";
 
             // Options to be displayed
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Opret en Furniture klasse og dens subklasser Chair og Computer",
             };
 
-            // Array of actions to be calledddd
+            // Array of actions to be called
             Action[] cases = {
-                () => {},
+                () => inheritance_tasks.Task1(),
             };
 
             // Build submenu
@@ -376,8 +386,7 @@ namespace CSharp_Opgaver
 
             // Options to be displayed
             string[] options = {
-                "1. Task 1 \t Desc: Enkel Operation med Int Variabler",
-                "2. Task 2 \t Desc: Kompleks Operation med Tal og Variabelnavne",
+                "1. Task 1 \t Desc: Implementer konstruktører i Bog klassen",
             };
 
             // Array of actions to be called
